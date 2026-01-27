@@ -1,0 +1,56 @@
+name: "Technical task"
+description: "리팩토링/기술부채/인프라 작업"
+title: "[TECH] "
+labels: ["type:tech"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 작업 배경
+      description: "왜 지금 해야 하나요? 어떤 문제가 있나요?"
+      placeholder: "예) ledger 조회가 느려져 p95가 800ms까지 증가"
+    validations:
+      required: true
+
+  - type: textarea
+    id: plan
+    attributes:
+      label: 변경 계획
+      description: "무엇을 어떻게 바꾸나요?"
+      placeholder: |
+        - 인덱스 추가
+        - 쿼리 최적화
+        - 캐시 적용 여부 검토
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: 리스크/영향 범위
+      placeholder: |
+        - 마이그레이션 필요 여부
+        - 다운타임 가능성
+        - 호환성 이슈
+    validations:
+      required: false
+
+  - type: textarea
+    id: rollback
+    attributes:
+      label: 롤백 계획
+      placeholder: "예) 배포 후 문제 발생 시 인덱스 제거 및 이전 쿼리로 복원"
+    validations:
+      required: false
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      placeholder: |
+        - [ ] p95 300ms 이하
+        - [ ] 에러율 증가 없음
+        - [ ] 리그레션 테스트 통과
+    validations:
+      required: true
+

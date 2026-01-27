@@ -1,0 +1,53 @@
+name: "Spike / Research"
+description: "조사/실험/기술 검증(타임박스)"
+title: "[SPIKE] "
+labels: ["type:spike"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 조사 질문
+      description: "무엇을 알아내야 하나요?"
+      placeholder: "예) 사진 업로드에 presigned URL 방식이 적합한가?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: 가설/현재 생각
+      placeholder: "예) presigned URL이 서버 부하를 줄이고 보안도 유지한다"
+    validations:
+      required: false
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: 조사 범위
+      placeholder: |
+        - 포함: 구현 PoC, 비용/보안 비교
+        - 제외: 실제 결제 연동
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 산출물
+      description: "무엇을 남길 건가요?"
+      placeholder: |
+        - 결론 문서(1~2페이지)
+        - PoC 코드/스크린샷
+        - 의사결정(채택/보류)
+    validations:
+      required: true
+
+  - type: input
+    id: timebox
+    attributes:
+      label: 타임박스
+      description: "예) 4시간, 1일, 2일"
+      placeholder: "예) 1일"
+    validations:
+      required: true
+

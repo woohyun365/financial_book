@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 질문/논의 (Discussions)
+    url: https://github.com/woohyun365/financial_book/discussions
+    about: 기능 논의/아이디어 브레인스토밍은 Discussions를 사용하세요.
+  - name: 보안 이슈 제보
+    url: https://github.com/woohyun365/financial_book/security/policy
+    about: 보안 관련 제보는 Security Policy를 통해 제출하세요.
+
